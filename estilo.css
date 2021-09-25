@@ -4,8 +4,8 @@ body {
     }
 
     #conteudo{
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
         padding: 2%;
         border-radius: 10px;
         margin-bottom: 3%;
@@ -17,7 +17,7 @@ input[type=text], select {
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 0px 15px 15px 0px;;
+    border-radius: 0px 15px 15px 0px;
     box-sizing: border-box;
   }
   
@@ -50,17 +50,23 @@ input[type=text], select {
 
 #sexo
 {
-    width: 25%
+    width: 50%
 }
 
-
+#numero
+{
+    width: 20%;
+}
 
 p{
+    text-align: left;
+    color:#f2f2f2;
+    white-space: nowrap;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     box-sizing: border-box;
     border-radius: 15px 0px 0px 15px;
-    background: #73AD21;
+    background: #f28500;
     margin-left: 15px;
 }
