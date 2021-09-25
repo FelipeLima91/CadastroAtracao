@@ -1,6 +1,5 @@
 body {
       font-family: sans-serif;
-      font-size: 16px;
     }
 
 
@@ -39,4 +38,9 @@ input[type=text], select {
     justify-content: space-between;
     
     
+}
+
+#sexo
+{
+    width: 25%
 }
