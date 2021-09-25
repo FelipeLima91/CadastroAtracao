@@ -100,7 +100,20 @@ h1{
         text-align: center;
 }
 
-img{
+#imgitau{
   width: 80px;
   height: 84px;
+}
+
+#imggama{
+    width: 80px;
+    height: 84px;
+  }
+
+  #imggithub{
+    width: 80px;
+  }
+
+#txtrodape{
+    color: black
 }
