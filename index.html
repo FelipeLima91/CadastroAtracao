@@ -62,7 +62,7 @@
 
                   <label for="Estado">Estado:</label>
                         <select id="Estado">
-                            <option value="Estado">Selecione</option>
+                            <option value="Estado">Selecione o Estado</option>
                             <option value="Estado">AC</option>
                             <option value="Estado">AL</option>
                             <option value="Estado">AP</option>
@@ -91,11 +91,80 @@
                             <option value="Estado">TO</option>
                         </select>
 
+                        <label for="CEP">CEP:</label>
+                        <input type="text" 
+                        id="cep" 
+                        name="cep" 
+                        placeholder="">
+
+                        <label for="Telefone">Telefone:</label>
+                        <input type="text" 
+                        id="telefone" 
+                        name="telefone"
+                        placeholder="">
+
+                        <label for="Celular">Celular:</label>
+                        <input type="text" 
+                        id="celular" 
+                        name="celular" 
+                        placeholder="">
 
                 </form>
-                <input type="submit" value="Enviar">
+                <input type="submit"
+                onclick="validar()"
+                value="Enviar">
+
+               
               </div>
-        </div>
+            </div>
+        <script>
+            /* Função Validar */
+            function validar() {
+              // pegando o valor do nome pelos names
+              var nome = document.getElementById("nome");
+              var cpf = document.getElementById("cpf");
+              var rua = document.getElementById("rua");
+              var numero = document.getElementById("numero");
+              var celular = document.getElementById("celular");
+    
+    
+    
+              // verificar se o nome está vazio
+              if (nome.value == "") {
+                alert("Nome não informado");
+    
+                // Deixa o input com o focus
+                nome.focus();
+                // retorna a função e não olha as outras linhas
+                return;
+              }
+              if (cpf.value == "") {
+                alert("CPF não informado");
+                cpf.focus();
+                return;
+              }
+              if (rua.value == "") {
+                alert("Endereço não informado");
+                rua.focus();
+                return;
+              }
+              if (numero.value == "") {
+                alert("Numero de endereço não informada");
+                numero.focus();
+                return;
+              }
+              if (celular.value == "") {
+                alert("celular não informado");
+                celular.focus();
+                return;
+              }
+    
+    
+              alert("Cadastro enviado! Muito obrigado =D");
+    
+            }
+          </script>
+    
     </body>
 
 </html>
