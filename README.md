@@ -1,5 +1,5 @@
-# Cadastro Atracão
-##Criar um formulário para registrar dados pessoais
+# Cadastro Atração
+## Criar um formulário para registrar dados pessoais
 Domínio - Modelagem de Dados
 
 Cadastro Pessoal com os campos: Nome, Cpf, Rg, Sexo, Endereco, Numero, Bairro, Cidade, Estado, Cep, Telefone Fixo, Telefone Celular.
