@@ -6,7 +6,7 @@
     <body>
         <h1>Cadastro de Atração</h1>
 
-            <div id="conteudo">
+        <div id="conteudo">
             <div id="coluna2">
                   <p>Nome Completo</p>
                   <input type="text"
@@ -68,7 +68,7 @@
 
                   <p>UF</p>
                         <select id="Estado">
-                            <option value="Estado">Selecione</option>
+                            <option value="Estado"></option>
                             <option value="Estado">Acre</option>
                             <option value="Estado">Alagoas</option>
                             <option value="Estado">Amapá</option>
@@ -97,14 +97,14 @@
                             <option value="Estado">Tocantins</option>
                         </select>
                
-                        <p>CEP</p>
+                    <p>CEP</p>
                     <input type="text" 
                     id="cep" 
-                    name="cep" 
+                    name="cep"
                     placeholder="">
-            </div>
+                </div>
 
-            <div id="coluna2">
+                <div id="coluna2">
                     <p>Telefone</p>
                     <input type="text" 
                     id="telefone" 
@@ -116,7 +116,7 @@
                     id="celular" 
                     name="celular" 
                     placeholder="preenchemento obrigatório">
-            </div>
+                </div>
 
                 <input type="submit"
                 onclick="validar()"
@@ -124,43 +124,40 @@
 
             </div>
            </form>
-         <script>
-            function validar() {
+         <script>//inicio de javascript - criar variaveis 
+            function validar() 
+            { 
               var nome = document.getElementById("nome");
               var cpf = document.getElementById("cpf");
               var rua = document.getElementById("rua");
               var numero = document.getElementById("numero");
               var celular = document.getElementById("celular");  
 
-              if (nome.value == "") {
-                alert("Nome não informado");
-    
-
+              if (nome.value == "") { //"" = campo vazio - 
+                alert("Preencha o nome completo");
                 nome.focus();
                 return;
               }
               if (cpf.value == "") {
-                alert("CPF não informado");
+                alert("Preencha o CPF");
                 cpf.focus();
                 return;
               }
               if (rua.value == "") {
-                alert("Endereço não informado");
+                alert("Preencha o endereço");
                 rua.focus();
                 return;
               }
               if (numero.value == "") {
-                alert("Numero de endereço não informada");
+                alert("Preencha o número de endereço");
                 numero.focus();
                 return;
               }
               if (celular.value == "") {
-                alert("celular não informado");
+                alert("Preencha o número de celular");
                 celular.focus();
                 return;
-              }
-    
-    
+              }    
               alert("Cadastro enviado");
     
             }
@@ -172,7 +169,7 @@
                 <a href="https://github.com/FelipeLima91"><img id="imggithub"src="./imagem/logogithub.png"></a> 
                     <img id="imgitau"src="./imagem/logoitau.png" alt="logoitau">
                     <img id="imggama" src="./imagem/logogama.png" alt="logogama">
-            </div>
+        </div>
     </body>
 
 </html>
