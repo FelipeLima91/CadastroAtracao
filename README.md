@@ -1,5 +1,7 @@
 # Cadastro Atração
 
+#### Um projeto proposto pela Gama Academy e Itau Tech para produzir o site
+
 Projeto concluido!🚀
 Link: https://cadastroatracao.netlify.app/
 
